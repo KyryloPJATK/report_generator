@@ -1,0 +1,9 @@
+{
+  "variable_mapping": {
+    "USER_TOKEN": "secret",
+    "DATE_FROM": "2023-01-01",
+    "DATE_TO": "2023-04-01"
+  },
+  "destination_path": "./demo/company_costs/report_template.xlsx",
+  "destination_sheet_name": "Generated_Report"
+}

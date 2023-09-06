@@ -1,0 +1,16 @@
+{
+  "DEV": {
+    "DATABASE_CONFIG": {
+        "MAIN_DB": {
+          "database": "./demo/company_costs/main_db.db",
+          "type": "sqlite"
+        },
+        "ADMIN_DB": {
+          "database": "./demo/company_costs/admin_db.db",
+          "type": "sqlite"
+        },
+        "__default_alias": "MAIN_DB"
+    },
+    "source_path": "./demo/company_costs/report_template.xlsx"
+  }
+}

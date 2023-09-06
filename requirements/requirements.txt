@@ -1,0 +1,7 @@
+pandas==1.4.3
+openpyxl~=3.1.2
+vincent==0.4.4
+xlsxwriter==3.0.3
+munch==2.5.0
+pyparsing~=3.0.9
+setuptools~=63.4.1

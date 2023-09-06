@@ -1,0 +1,30 @@
+title Business Flow
+
+actor System Administrator
+actor Developer
+actor User
+actor Report Generator
+
+System Administrator->>Report Generator: Set up report generator application
+System Administrator->>Report Generator: Set up system configuration
+
+Developer->>Report Generator: Create report template
+Developer->>Report Generator: Store report template
+Developer->>User: Make report template accessible
+
+User->>Report Generator: Trigger report generation
+
+Report Generator->>Report Generator: Load report template in memory
+Report Generator->>Report Generator: Initialize "Global Context"
+
+Report Generator->>Report Generator: Fetch relevant lexeme
+Report Generator->>Report Generator: Trigger lexeme parsing logic
+
+alt any exceptions occur
+    Report Generator->>Report Generator: Terminate the flow
+else
+    Report Generator->>Report Generator: Actualize "Global Context"
+end
+
+Report Generator->>Report Generator: Save report
+User->>Report Generator: Retrieve report

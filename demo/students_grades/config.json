@@ -1,0 +1,11 @@
+{
+  "DEV": {
+    "DATABASE_CONFIG": {
+        "LOCAL": {
+          "database": "./demo/students_grades/demo_db.db",
+          "type": "sqlite"
+        },
+        "__default_alias": "LOCAL"
+    }
+  }
+}
